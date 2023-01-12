@@ -50,6 +50,9 @@
     color: #fff;
     background-color: var(--bg-color);
     font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .single-review > .random-btn{
     outline: none;
