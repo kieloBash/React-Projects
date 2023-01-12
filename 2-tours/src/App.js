@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 import Loading from "./components/Loading";
 import Tours from "./components/Tours";
-const url = 'https://course-api.com/react-tours-project';
+const url = "https://course-api.com/react-tours-project";
 function App() {
   const [loading, setLoading] = useState(true);
   const [tours, setTours] = useState([]);
@@ -15,14 +15,15 @@ function App() {
       const tours = await res.json();
       setLoading(false);
       setTours(tours);
+      // console.log(tours);
     } catch (error) {
-      setLoading(false)
+      setLoading(false);
       console.log(error);
     }
-  }
-useEffect(() => {
-  fetchTours();
-}, []);
+  };
+  useEffect(() => {
+    fetchTours();
+  }, []);
   if (loading) {
     return (
       <main>
@@ -32,7 +33,7 @@ useEffect(() => {
   }
   return (
     <main>
-      <Tours />
+      <Tours tours={tours} />
     </main>
   );
 }
