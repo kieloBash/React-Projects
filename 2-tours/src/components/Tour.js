@@ -1,4 +1,7 @@
+import { useState } from "react";
+
 export default function Tour(props) {
+  const [readMore, setReadMore] = useState(false);
   return (
     <article className="single-tour">
       <img src={props.image} alt={props.name} />
@@ -7,7 +10,10 @@ export default function Tour(props) {
           <h3>{props.name}</h3>
           <h3 className="tour-price">${props.price}</h3>
         </div>
-        <p>{props.info}</p>
+        <p>{readMore ? props.info : `${props.info.substring(0,250)}...`}</p>
+        <button onClick={()=>setReadMore(!readMore)} className='show'>
+            {readMore ? 'Show less' : 'Show more'}
+        </button>
         <div className="btn-container">
           <button className="delete-btn">Not Interested</button>
         </div>
