@@ -1,7 +1,7 @@
 import React from "react";
 import Tour from "./Tour";
 import "./css/Tours.css";
-export default function Tours({ tours }) {
+export default function Tours({ tours, removeTours }) {
   return (
     <section>
       <div className="title">
@@ -10,7 +10,7 @@ export default function Tours({ tours }) {
       </div>
       <div className="cont">
         {tours.map((tour) => {
-          return <Tour key={tour.id} {...tour} />;
+          return <Tour key={tour.id} {...tour} removeTours={removeTours}/>;
         })}
       </div>
     </section>

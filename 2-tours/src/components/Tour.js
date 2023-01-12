@@ -15,7 +15,7 @@ export default function Tour(props) {
             {readMore ? 'Show less' : 'Show more'}
         </button>
         <div className="btn-container">
-          <button className="delete-btn">Not Interested</button>
+          <button className="delete-btn" onClick={() => props.removeTours(props.id)}>Not Interested</button>
         </div>
       </footer>
     </article>

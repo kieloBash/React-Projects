@@ -5,4 +5,22 @@ main{
   justify-content: center;
   align-items: center;
 }
+main .title h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+main .title button{
+  font-size: 1.5rem;
+  padding: 10px 90px;
+  outline: none;
+  border: 2px solid rgb(57, 153, 153);
+  background-color: rgb(233, 233, 233);
+  color: rgb(57, 153, 153);
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .title button:hover{
+  background-color: rgb(57, 153, 153);
+  color: #FFF;
+}
 
