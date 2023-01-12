@@ -1,0 +1,36 @@
+main{
+  height: 100vh;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  background-color: rgb(255, 255, 255);
+  padding: 30px;
+  width: 360px;
+
+  box-shadow: 0 3px 20px rgba(0,0,0,0.4);
+}
+.container h1{
+  text-align: center;
+  font-size: 2rem;
+}
+.container h3{
+  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.501);
+}
+button{
+  width: 100%;
+  height: 40px;
+  font-size: 1rem;
+  font-weight: 600;
+  outline: none;
+  border: none;
+  background-color: var(--bg-color);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
