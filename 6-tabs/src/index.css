@@ -1,3 +1,8 @@
+:root{
+  --main-color: rgb(192, 69, 220);
+  --pressed-color: rgb(154, 70, 171);
+  --highlight-color: rgba(192, 69, 220, 0.623);
+}
 *{
   margin: 0;
   padding: 0;
