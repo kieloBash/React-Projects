@@ -1,3 +1,8 @@
+:root{
+  --main-color: rgb(225, 184, 17);
+  --dark-main-color: rgba(237, 219, 147, 0.587);
+  --inactive-text-color: rgba(0, 0, 0, 0.587);
+}
 *{
   margin: 0;
   padding: 0;
