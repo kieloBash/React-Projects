@@ -90,6 +90,7 @@ hr {
     cursor: pointer;
     font-weight: 600;
     transition: all 0.2s ease-in-out;
+    text-transform: capitalize;
 }
 .btn-container button:hover{
     background-color: var(--main-color);
