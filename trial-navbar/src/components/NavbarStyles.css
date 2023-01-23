@@ -1,0 +1,120 @@
+:root {
+  --bg: rgb(155, 202, 211);
+  --bg-mobile: rgb(101, 140, 147);
+  --text-color: rgb(67, 66, 66);
+  --accent: rgb(249, 170, 80);
+  --accent-mobile: rgb(208, 136, 120);
+  --accent-hover: rgb(172, 93, 4);
+  --transition: all 0.2s ease;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg);
+  padding: 20px 20px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+.logo {
+  fill: var(--accent);
+  width: 70px;
+  height: 70px;
+  transition: var(--transition);
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar li {
+  list-style: none;
+  padding: 0 50px;
+  position: relative;
+}
+.navbar li #link {
+  text-decoration: none;
+  font-size: 2rem;
+  color: var(--text-color);
+  transition: var(--transition);
+}
+.navbar li #link:hover {
+  color: var(--accent-hover);
+}
+.navbar li #link.active {
+  color: var(--accent);
+}
+.navbar li #link:hover::after,
+.navbar li #link.active::after {
+  content: "";
+  width: 20%;
+  height: 2px;
+  background: var(--accent);
+  position: absolute;
+  bottom: -4px;
+  left: 50px;
+}
+.icon-nav {
+  cursor: pointer;
+  font-size: 2rem;
+  color: var(--accent-mobile);
+  outline: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 50px;
+  width: 50px;
+  border: 3px solid var(--accent-mobile);
+  border-radius: 50%;
+}
+#mobile {
+  display: none;
+}
+
+@media screen and (max-width: 769px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 15px;
+
+    position: absolute;
+    top: 134px;
+    right: 0px;
+    width: 40%;
+    height: 500px;
+    background-color: var(--bg-mobile);
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.3);
+
+    padding: 40px 0 0 0px;
+  }
+  .navbar.active{
+    right: 200%;
+  }
+  .navbar li {
+    padding: 0 20px;
+  }
+  .navbar li #link {
+    font-size: 100px;
+  }
+  #mobile {
+    display: block;
+  }
+  .navbar li #link {
+    font-size: 1.3rem;
+  }
+  .logo {
+    fill: var(--accent-mobile);
+    width: 90px;
+    height: 90px;
+  }
+  .navbar li #link.active {
+    color: var(--accent-mobile);
+  }
+  .navbar li #link:hover::after,
+  .navbar li #link.active::after {
+    background: var(--accent-mobile);
+  }
+}

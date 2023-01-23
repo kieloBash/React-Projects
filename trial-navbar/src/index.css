@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Righteous", cursive;
+}
+img {
+  display: block;
+  width: 100%;
+}
+body {
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+:root {
+  --text-001: rgb(0, 0, 0);
+  --transition: all 0.3s linear;
+}
+
+/* li {
+  list-style: none;
+}
+.nav-main {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5%;
+}
+.nav-header span {
+  font-size: 2em;
+  color: var(--text-001);
+}
+.nav-links {
+  width: 70%;
+  font-size: 1.5rem;
+}
+.nav-links ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.nav-links ul li a {
+  text-decoration: none;
+  background-image: linear-gradient(90deg, red, blue);
+  background-clip: text;
+  color: transparent;
+
+  transition: var(--transition);
+}
+.nav-links ul li a:hover {
+  color: var(--text-001);
+  text-decoration: underline;
+}
+.nav-links ul li a.active {
+  color: var(--text-001);
+  text-decoration: underline;
+}
+.mobile button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.mobile > button > .menu,
+.mobile > button > .close {
+  font-size: 2rem;
+
+  color: var(--text-001);
+
+  height: 100%;
+  width: 100%;
+  transition: var(--transition);
+}
+.mobile .menu:hover {
+  color: rgb(152, 152, 152);
+}
+.mobile{
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .mobile{
+    display: block;
+  }
+  .nav-links{
+    display: none;
+  }
+} */
+
